@@ -54,6 +54,9 @@ html_theme_options = {
     "use_issues_button": True,
     "use_edit_page_button": True,
     "path_to_docs": "site/",
+    "launch_buttons": {
+        "binderhub_url": "https://mybinder.org/v2/gh/numpy/numpy-tutorials/master?urlpath=content"
+    },
 }
 
 
