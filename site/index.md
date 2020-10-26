@@ -15,6 +15,7 @@ caption: "Contents:"
 notebooks/cs231_tutorial
 notebooks/tutorial-svd
 notebooks/tutorial-style-guide
+notebooks/tutorial-ma
 ```
 
 ## Indices and tables

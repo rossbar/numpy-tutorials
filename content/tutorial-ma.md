@@ -68,11 +68,7 @@ From [Kaggle](https://www.kaggle.com/atilamadai/covid19) it is possible to downl
 
 ```{code-cell} ipython3
 import numpy as np
-import os
-# The os.getcwd() function returns the current folder; you can change
-# the filepath variable to point to the folder where you saved the .csv file
-filepath = os.getcwd()
-filename = os.path.join(filepath, "who_covid_19_sit_rep_time_series.csv")
+filename = "data/who_covid_19_sit_rep_time_series.csv"
 ```
 
 The data file contains data of different types and is organized as follows:
