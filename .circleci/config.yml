@@ -20,9 +20,10 @@ jobs:
             pip install -r site/requirements.txt
 
       - run:
-          name: Build docs
+          name: Create notebooks and build site
           command: |
             source venv/bin/activate
+            make -C site/ notebooks
             make -C site/ html
 
       - store_artifacts:

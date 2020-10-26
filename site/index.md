@@ -12,9 +12,9 @@ maxdepth: 1
 caption: "Contents:"
 ---
 
-content/cs231_tutorial
-content/tutorial-svd
-content/tutorial-style-guide
+notebooks/cs231_tutorial
+notebooks/tutorial-svd
+notebooks/tutorial-style-guide
 ```
 
 ## Indices and tables

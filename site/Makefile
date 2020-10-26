@@ -12,7 +12,14 @@ BUILDDIR      = _build
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help Makefile
+notebooks:
+	mkdir -p notebooks
+	jupytext -k python3 ../content/*.md --from myst --to notebook
+	mv ../content/*.ipynb notebooks
+
+# html: notebooks  # --- NOTE: Breaks notebook execution caching
+
+.PHONY: help Makefile notebooks
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
