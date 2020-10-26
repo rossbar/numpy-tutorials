@@ -16,6 +16,7 @@ notebooks:
 	mkdir -p notebooks
 	jupytext -k python3 ../content/*.md --from myst --to notebook
 	mv ../content/*.ipynb notebooks
+	ln -sfn ../../data notebooks/data
 
 # html: notebooks  # --- NOTE: Breaks notebook execution caching
 
