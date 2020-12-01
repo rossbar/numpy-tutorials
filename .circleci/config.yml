@@ -55,6 +55,10 @@ jobs:
             git config --global user.email "ci-doc-deploy-bot@nomail"
             git config --global push.default simple
 
+      - add_ssh_keys:
+          fingerprints:
+            87:1a:79:b0:8f:59:c6:79:45:00:8e:9c:77:70:6f:5e
+
       - run:
           name: deploy to gh-pages
           command: |
