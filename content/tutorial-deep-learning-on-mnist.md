@@ -518,6 +518,8 @@ To reduce the error during training and testing, you can consider changing the s
 You have learned how to build and train a simple feed-forward neural network from scratch using just NumPy to classify handwritten MNIST digits.
 
 To further enhance and optimize your neural network model, you can consider one of a mixture of the following:
+- Increase the number of epochs to get a better sense for how network
+  performance scales with training time.
 - Increase the training sample size from 1,000 to a higher number (up to 60,000).
 - Use [mini-batches and reduce the learning rate](http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf).
 - Alter the architecture by introducing more hidden layers to make the network [deeper](https://en.wikipedia.org/wiki/Deep_learning).
