@@ -14,7 +14,8 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu] # , macos, windows] # Get this working with linux first
+        # NOTE: Gym/atari deps need to be solved for this to work on windows
+        os: [ubuntu, macos] #, windows]
 
     defaults:
       run:
