@@ -32,7 +32,10 @@ jobs:
           use-mamba: true
           python-version: "3.10"
           auto-activate-base: false
-      - run: |
+      - name: inspect and build
+        id: build_step
+        continue-on-error: true
+        run: |
           conda info
           conda list
           make -C site/ SPHINXOPTS="-nWT --keep-going" html
@@ -41,4 +44,8 @@ jobs:
         with:
           name: sphinx-build-artifact
           path: site/_build/html
+
+      - name: fail on build errors
+        if: steps.build_step.outcome != "success"
+        run: exit 1
 
