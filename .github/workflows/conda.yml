@@ -43,7 +43,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: sphinx-build-artifact
-          path: site/_build/html
+          path: site/_build/html/reports
 
       - name: fail on build errors
         if: steps.build_step.outcome != 'success'
