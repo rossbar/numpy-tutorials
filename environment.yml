@@ -12,6 +12,7 @@ dependencies:
   - pip
   - imageio
   - pooch
+  - ffmpeg  # For gym/atari
   - pip:
     - gym[atari]==0.19
     - -r site/requirements.txt
