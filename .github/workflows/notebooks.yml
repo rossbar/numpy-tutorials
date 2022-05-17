@@ -39,4 +39,4 @@ jobs:
         rm content/tutorial-style-guide.ipynb
         rm content/tutorial-nlp-from-scratch.ipynb
         # Test notebook execution
-        pytest --nbval-lax --durations content/
+        pytest --nbval-lax --durations=10 content/
