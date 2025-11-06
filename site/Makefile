@@ -17,6 +17,12 @@ notebooks:
 	jupytext -k python3 ../content/*.md --from myst --to notebook
 	mv ../content/*.ipynb notebooks
 
+jupyterlite-build: notebooks
+	jupyter lite build --contents notebooks --output-dir dist --lite-dir jupyterlite
+
+jupyterlite-serve: jupyterlite-build
+	python -m http.server --directory dist
+
 clean:
 	rm -rf _build
 	rm -rf notebooks
